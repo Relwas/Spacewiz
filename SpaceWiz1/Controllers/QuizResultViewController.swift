@@ -30,6 +30,7 @@ class QuizResultViewController: UIViewController {
         ])
 
         // Create the score label
+        // Create the score label
         let scoreLabel = UILabel()
         scoreLabel.text = "Congratulations \(userName)! Your Score: \(userScore)"
         scoreLabel.textAlignment = .center
@@ -40,11 +41,10 @@ class QuizResultViewController: UIViewController {
 
         NSLayoutConstraint.activate([
             scoreLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            scoreLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            scoreLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-
-            scoreLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 165)
+            scoreLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 20), // Adjust the top constraint
+            scoreLabel.widthAnchor.constraint(equalToConstant: view.frame.width - 40), // Adjust the width as needed
         ])
+
 
         // Optionally, you can display a congratulations message based on the user's score
         let congratulationsLabel = UILabel()
