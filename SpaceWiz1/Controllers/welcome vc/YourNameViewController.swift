@@ -194,8 +194,8 @@ class WelcomeViewController: UIViewController {
 
             // title, image
             let label = UILabel(frame: CGRect(x: 10, y: 40, width: pageView.frame.size.width - 20, height: 120))
-            let secondlabel = UILabel(frame: CGRect(x: 10, y: 530, width: pageView.frame.size.width - 20, height: 230))
-            let imageView = UIImageView(frame: CGRect(x: 10, y: 200, width: pageView.frame.size.width - 20, height: 380))
+            let secondlabel = UILabel(frame: CGRect(x: 10, y: 470, width: pageView.frame.size.width - 20, height: 200))
+            let imageView = UIImageView(frame: CGRect(x: 30, y: 170, width: pageView.frame.size.width - 70, height: 330))
 
             
             label.textAlignment = .center

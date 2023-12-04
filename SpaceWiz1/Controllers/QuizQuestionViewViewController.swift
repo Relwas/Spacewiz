@@ -73,43 +73,59 @@ class QuizQuestionViewController: UIViewController {
     }
 
     func setupConstraints() {
-           NSLayoutConstraint.activate([
-               earthImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-               earthImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -180),
-               earthImageView.widthAnchor.constraint(equalToConstant: 250),
-               earthImageView.heightAnchor.constraint(equalToConstant: 250)
-           ])
+        NSLayoutConstraint.activate([
+            earthImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            earthImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -180),
+            earthImageView.widthAnchor.constraint(equalToConstant: 250),
+            earthImageView.heightAnchor.constraint(equalToConstant: 250)
+        ])
 
-           // Constraints for the question label
-           NSLayoutConstraint.activate([
-               questionLabel.topAnchor.constraint(equalTo: earthImageView.bottomAnchor, constant: 15),
-               questionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-               questionLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-               questionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-           ])
+        // Constraints for the question label
+        NSLayoutConstraint.activate([
+            questionLabel.topAnchor.constraint(equalTo: earthImageView.bottomAnchor, constant: 15),
+            questionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            questionLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            questionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+        ])
 
-           // Create a container view for the answer buttons
-           let buttonsContainerView = UIView()
-           buttonsContainerView.translatesAutoresizingMaskIntoConstraints = false
-           view.addSubview(buttonsContainerView)
+        // Create a container view for the answer buttons
+        let buttonsContainerView = UIView()
+        buttonsContainerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(buttonsContainerView)
 
-           NSLayoutConstraint.activate([
-               buttonsContainerView.topAnchor.constraint(equalTo: earthImageView.bottomAnchor, constant: 210),
-               buttonsContainerView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-               buttonsContainerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-               buttonsContainerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-           ])
+        NSLayoutConstraint.activate([
+            buttonsContainerView.topAnchor.constraint(equalTo: earthImageView.bottomAnchor, constant: 210),
+            buttonsContainerView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            buttonsContainerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            buttonsContainerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            buttonsContainerView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20)
+        ])
 
-           for (index, button) in answerButtons.enumerated() {
-               NSLayoutConstraint.activate([
-                   button.topAnchor.constraint(equalTo: buttonsContainerView.topAnchor, constant: CGFloat(55 * index)),
-                   button.leadingAnchor.constraint(equalTo: buttonsContainerView.leadingAnchor),
-                   button.trailingAnchor.constraint(equalTo: buttonsContainerView.trailingAnchor),
-                   
-                   button.heightAnchor.constraint(equalToConstant: 45),
-               ])
-           }
-       }
+        // Set the first button's top constraint
+        var previousButtonBottomAnchor = buttonsContainerView.topAnchor
+
+        for (index, button) in answerButtons.enumerated() {
+            NSLayoutConstraint.activate([
+                button.leadingAnchor.constraint(equalTo: buttonsContainerView.leadingAnchor),
+                button.trailingAnchor.constraint(equalTo: buttonsContainerView.trailingAnchor),
+                button.heightAnchor.constraint(equalToConstant: 45),
+            ])
+
+            if index == 0 {
+                button.topAnchor.constraint(equalTo: previousButtonBottomAnchor).isActive = true
+            } else {
+                // Set the top constraint relative to the previous button
+                button.topAnchor.constraint(equalTo: answerButtons[index - 1].bottomAnchor, constant: 10).isActive = true
+            }
+
+            // Set the bottom constraint for the last button
+            if index == answerButtons.count - 1 {
+                button.bottomAnchor.constraint(equalTo: buttonsContainerView.bottomAnchor).isActive = true
+            }
+
+            previousButtonBottomAnchor = button.bottomAnchor
+        }
+    }
     func setupUIForCurrentQuestion() {
         guard currentQuestionIndex < quizQuestions.count else {
             showQuizResult()
