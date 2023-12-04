@@ -1,8 +1,477 @@
-//
-//  quiz_data.json
-//  SpaceWiz1
-//
-//  Created by relwas on 03/12/23.
-//
+[
+    {
+      "question": "What is the most conspicuous object in the night sky after the Sun?",
+      "options": ["Stars", "Moon", "Planets", "Clouds"],
+      "correctOption": "Moon"
+    },
+    {
+      "question": "What did the Cro Magnon people create 30,000 years ago, possibly depicting the phases of the Moon?",
+      "options": ["Stone Tools", "Cave Paintings", "Bone Engravings", "Pottery"],
+      "correctOption": "Bone Engravings"
+    },
+    {
+        "question": "What were the oldest astronomical documents, used for time reckoning and 25,000 years older than writing?",
+        "options": ["Stone Tablets", "Papyrus Scrolls", "Calendars", "Hieroglyphs"],
+        "correctOption": "Calendars"
+      },
+     {
+      "question": "During the 17th and 18th centuries, what were the most important tasks of astronomy?",
+      "options": ["Studying Stars", "Creating Calendars", "Developing Navigation", "Predicting Weather"],
+      "correctOption": "Developing Navigation"
+    },
+     {
+        "question": "What changed man's view of the world from geocentric, anthropocentric conceptions to a modern view of a vast universe?",
+        "options": ["Mathematics", "Physics", "Astronomy", "Chemistry"],
+        "correctOption": "Astronomy"
+      },{
+          "question": "What is the greatest natural density met on Earth?",
+          "options": ["10−9 kgm−3", "22,500 kg m−3 (osmium)", "1018 kg m−3", "10−21 kg m−3"],
+          "correctOption": "22,500 kg m−3 (osmium)"
+        }
+,
+{
+  "question": "What is the density in the best vacuum achieved on Earth?",
+  "options": ["10−9 kgm−3", "22,500 kg m−3 (osmium)", "1018 kg m−3", "10−21 kg m−3"],
+  "correctOption": "10−9 kgm−3"
+}
+,
+{
+  "question": "What is the energy range of particles achieved by modern accelerators?",
+  "options": ["1012 electron volts (eV)", "1020 electron volts (eV)", "108 electron volts (eV)", "105 electron volts (eV)"],
+  "correctOption": "1012 electron volts (eV)"
+}
+,
+{
+  "question": "When were the first measurements of stellar distances made?",
+  "options": ["17th century", "1830’s", "1920’s", "2nd century B.C."],
+  "correctOption": "1830’s"
+}
+,
+{
+  "question": "How long does it take for light to travel from the nearest star to the Earth?",
+  "options": ["8 minutes", "4 years", "150,000 years", "20,000 years"],
+  "correctOption": "4 years"
+}
+,
+    {
+        "question": "What is the speed of light?",
+        "options": ["300,000 km/s", "150,000 km/s", "200,000 km/s", "250,000 km/s"],
+        "correctOption": "300,000 km/s"
+    },
+    {
+      "question": "What is the greatest natural density met on Earth?",
+      "options": ["10−9 kgm−3", "22,500 kg m−3 (osmium)", "1018 kg m−3", "10−21 kg m−3"],
+      "correctOption": "22,500 kg m−3 (osmium)"
+    }
+,
+    {
+        "question": "Who developed the theory of relativity?",
+        "options": ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Stephen Hawking"],
+        "correctOption": "Albert Einstein"
+    },
+    {
+      "question": "What is the intersection curve when a sphere is intersected by a plane not containing the centre?",
+      "options": ["Great circle", "Small circle", "Ellipse", "Hyperbola"],
+      "correctOption": "Small circle"
+    }
+,
+{
+  "question": "What is the central angle of an arc AB in a spherical triangle?",
+  "options": ["radians", "degrees", "minutes", "seconds"],
+  "correctOption": "radians"
+},
+{
+    "question": "What is the excess in the sum of angles of a spherical triangle called?",
+    "options": ["Latitude", "Longitude", "Spherical excess", "Elevation"],
+    "correctOption": "Spherical excess"
+  },
+{
+  "question": "What is the area of a spherical triangle related to?",
+  "options": ["Radius of the sphere", "Spherical excess", "Length of sides", "Latitude"],
+  "correctOption": "Spherical excess"
+},
+{
+  "question": "How is an angle of a spherical triangle defined?",
+  "options": ["Angle between sides", "Angle between tangents", "Angle between vertices", "Angle between planes"],
+  "correctOption": "Angle between tangents"
+},
+{
+  "question": "What does the excess in the sum of angles of a spherical triangle depend on?",
+  "options": ["Latitude", "Longitude", "Spherical excess", "Elevation"],
+  "correctOption": "Spherical triangle"
+},
+{
+  "question": "What are the coordinates of the point P in the x y z frame in terms of angles ψ and θ?",
+  "options": ["x = cosψ cosθ, y = sinψ cosθ, z = sinθ", "x = sinψ cosθ, y = cosψ cosθ, z = sinθ", "x = cosψ sinθ, y = sinψ sinθ, z = cosθ", "x = sinψ sinθ, y = cosψ sinθ, z = cosθ"],
+  "correctOption": "x = cosψ cosθ, y = sinψ cosθ, z = sinθ"
+},
+{
+  "question": "What is the result of the coordinate transformation from the xyz frame to the x′ y′ z′ frame?",
+  "options": ["Rotation in xz plane", "Rotation in yz plane", "Rotation in xy plane", "Scaling along the z axis"],
+  "correctOption": "Rotation in xz plane"
+},
+{
+  "question": "What are the spherical coordinates of the vertex C expressed in terms of the sides and angles of the spherical triangle?",
+  "options": ["ψ=A−90, θ=90−b", "ψ=90−B, θ=90−a", "χ=c", "θ′=90−c"],
+  "correctOption": "ψ=A−90, θ=90−b"
+},
+{
+  "question": "What does the sine formula for spherical triangles reduce to in the limit when the sides a, b, and c shrink to zero?",
+  "options": ["Sine formula of plane geometry", "Cosine formula of plane geometry", "Tangent formula of plane geometry", "Secant formula of plane geometry"],
+  "correctOption": "Sine formula of plane geometry"
+}, {
+    "question": "How is a position on the Earth usually given?",
+    "options": ["Rectangular coordinates", "Geographical coordinates", "Spherical coordinates", "Cylindrical coordinates"],
+    "correctOption": "Spherical coordinates"
+  }, {
+      "question": "What does the geographical latitude equal when the celestial pole altitude is measured?",
+      "options": ["Celestial latitude", "Geocentric latitude", "Zenith latitude", "Geodetic latitude"],
+      "correctOption": "Geodetic latitude"
+    }, {
+        "question": "What shape is the Earth approximated by for most purposes?",
+        "options": ["Perfect sphere", "Oblate spheroid", "Ellipsoid", "Cylinder"],
+        "correctOption": "Oblate spheroid"
+      }, {
+          "question": "When was the Geodetic Reference System 1980 (GRS-80) adopted?",
+          "options": ["1960", "1979", "1985", "1990"],
+          "correctOption": "1979"
+        } , {
+            "question": "What are the dimensions of the GRS-80 reference ellipsoid?",
+            "options": ["a = 6,356,752 m, b = 6,378,137 m", "a = 6,378,137 m, b = 6,356,752 m", "a = 6,400,000 m, b = 6,300,000 m", "a = 6,300,000 m, b = 6,400,000 m"],
+            "correctOption": "a = 6,378,137 m, b = 6,356,752 m"
+          }, {
+              "question": "What is the shape defined by the surface of the oceans called?",
+              "options": ["Geoid", "Ellipsoid", "Spheroid", "Equator"],
+              "correctOption": "Geoid"
+            }, {
+                "question": "What is the angle between the equator and the normal to the ellipsoid called?",
+                "options": ["Celestial latitude", "Geodetic latitude", "Zenith angle", "Geocentric latitude"],
+                "correctOption": "Geodetic latitude"
+              }, {
+                  "question": "What does the geocentric latitude φ′ correspond to?",
+                  "options": ["Spherical coordinate", "Geographical latitude", "Celestial latitude", "Zenith latitude"],
+                  "correctOption": "Spherical coordinate"
+                }, {
+                    "question": "At which locations does the plumb line point to the center of the Earth?",
+                    "options": ["Poles and Equator", "Tropics", "Prime Meridian", "International Date Line"],
+                    "correctOption": "Poles and Equator"
+                  }, {
+                      "question": "What is the angle between the equator and the line from the center to a point on the surface?",
+                      "options": ["Spherical latitude", "Zenith angle", "Geodetic latitude", "Celestial latitude"],
+                      "correctOption": "Geodetic latitude"
+                    },{
+                        "question": "According to the ancient model, where was the Earth located in the universe?",
+                        "options": ["At the edge of the universe", "At the center of a spherical shell", "On a flat plane", "On an elliptical orbit"],
+                        "correctOption": "At the center of a spherical shell"
+                      },{
+                          "question": "What model helps understand the diurnal and annual motions of stars?",
+                          "options": ["Elliptical model", "Ancient universe model", "Spherical model", "Flat Earth model"],
+                          "correctOption": "Spherical model"
+                        },{
+                            "question": "In the spherical model, where are all the stars assumed to be located?",
+                            "options": ["Inside the Earth", "On the surface of a flat plane", "On the surface of an enormous sphere", "At random positions"],
+                            "correctOption": "On the surface of an enormous sphere"
+                          },{
+                              "question": "Why can the effects of changing observer position be neglected in the spherical model?",
+                              "options": ["Due to Earth's rotation", "Because of elliptical orbits", "Infinite radius of the celestial sphere", "Constant speed of light"],
+                              "correctOption": "Infinite radius of the celestial sphere"
+                            },{
+                                "question": "How many coordinates are needed to specify the directions of stars in the celestial sphere?",
+                                "options": ["One", "Three", "Four", "Two"],
+                                "correctOption": "Two"
+                              },{
+                                  "question": "What does each coordinate frame have in the celestial sphere?",
+                                  "options": ["Fixed reference point", "Rotating reference plane", "Fixed reference plane", "Variable reference direction"],
+                                  "correctOption": "Fixed reference plane"
+                                },{
+                                    "question": "What is the purpose of the fixed reference plane in the celestial sphere?",
+                                    "options": ["To define a great circle", "To mark the North Star", "To divide the Earth into hemispheres", "To set the position of the Moon"],
+                                    "correctOption": "To define a great circle"
+                                  },{
+                                      "question": "How many hemispheres does the fixed reference plane divide the celestial sphere into?",
+                                      "options": ["One", "Two", "Three", "Four"],
+                                      "correctOption": "Two"
+                                    },{
+                                        "question": "What does the second coordinate in the celestial sphere indicate?",
+                                        "options": ["Angular distance from the reference plane", "Distance in light-years", "Altitude above sea level", "Temperature of stars"],
+                                        "correctOption": "Angle between the point of intersection and a fixed direction"
+                                      },{
+                                          "question": "When will the effects due to changing observer position be considered according to the text?",
+                                          "options": ["In Section 2.9", "In Section 2.10", "In Section 2.11", "In Section 3.0"],
+                                          "correctOption": "In Section 2.9 and 2.10"
+                                        },{
+                                            "question": "What is the reference plane for the horizontal frame in the observer's point of view?",
+                                            "options": ["Equatorial plane", "Tangent plane of the Earth", "Meridian plane", "Ecliptic plane"],
+                                            "correctOption": "Tangent plane of the Earth"
+                                          },{
+                                              "question": "What does the horizontal plane intersect along the celestial sphere?",
+                                              "options": ["Ecliptic plane", "Equator", "Horizon", "Meridian"],
+                                              "correctOption": "Horizon"
+                                            },{
+                                                "question": "What are the poles corresponding to the horizon called?",
+                                                "options": ["Zenith and Nadir", "Culminate and Horizon", "Meridian and Horizon", "Ecliptic and Equator"],
+                                                "correctOption": "Zenith and Nadir"
+                                              },{
+                                                  "question": "What are great circles through the zenith called?",
+                                                  "options": ["Equators", "Meridians", "Verticals", "Horizontals"],
+  "correctOption": "Verticals"
+},{
+    "question": "What is the track that stars follow over the course of a night called?",
+    "options": ["Equator", "Horizon", "Meridian", "Ecliptic"],
+    "correctOption": "Meridian"
+  },{
+      "question": "How are north and south directions defined in the horizontal frame?",
+      "options": ["Along the horizon", "Along the meridian", "Along the vertical", "Along the equator"],
+      "correctOption": "Along the meridian"
+    },{
+        "question": "What is the range of altitude, and what does it signify?",
+        "options": ["[0°, 180°], objects below the horizon", "[-90°, +90°], objects above the horizon", "[-180°, 0°], objects above the horizon", "[-90°, +90°], objects below the horizon"],
+        "correctOption": "[-90°, +90°], objects above the horizon"
+      },{
+          "question": "How is the zenith distance (z) related to the altitude (a)?",
+          "options": ["z = a", "z = 90 - a", "z = a - 90", "z = 180 - a"],
+          "correctOption": "z = 90 - a"
+        },{
+            "question": "What is the azimuth (A) measured from in the adopted astronomical convention?",
+            "options": ["East", "West", "North", "South"],
+            "correctOption": "South"
+          },
+        {
+                                                              "question": "Why can't horizontal coordinates be used in star catalogues according to the text?",
+                                                              "options": ["They are time and position dependent", "They are too complex", "They lack precision", "They are not based on Earth's rotation"],
+                                                              "correctOption": "They are time and position dependent"
+                                                            },{
+                                                                "question": "What was the ancient model of the universe, and where was the Earth located in this model?",
+                                                                "options": ["Infinite sphere model, Earth at the center", "Flat Earth model, Earth at the center", "Spherical shell model, Earth at the center", "Heliocentric model, Earth in orbit"],
+                                                                "correctOption": "Spherical shell model, Earth at the center"
+                                    },{
+                                        "question": "Why is the ancient model of the universe still considered useful?",
+                                        "options": ["It accurately describes celestial motions", "It accounts for the changing position of the observer", "It predicts celestial motions in a simple way", "It explains the elliptical orbits of planets"],
+                                        "correctOption": "It predicts celestial motions in a simple way"
+                                    },{
+                                        "question": "In the ancient model, where are the stars located, and what is their relationship to the Earth?",
+                                        "options": ["Inside the Earth", "On an elliptical orbit around the Earth", "On the surface of an infinite sphere with Earth at the center", "In random positions in space"],
+                                        "correctOption": "On the surface of an infinite sphere with Earth at the center"
+                                        },{
+                                            "question": "What can be neglected in the ancient model of the universe, and why?",
+                                            "options": ["Changing position of the observer due to Earth's rotation", "Earth's elliptical orbit", "Effects of gravity", "Motion of stars"],
+                                            "correctOption": "Changing position of the observer due to Earth's rotation"
+                                        },{
+                                            "question": "How many coordinates are needed to specify the direction of stars in the ancient model?",
+                                            "options": ["One", "Two", "Three", "Four"],
+                                            "correctOption": "Two"
+                                            },{
+                                                "question": "What does one coordinate frame's reference plane do in the ancient model?",
+                                                "options": ["Passes through the equator", "Passes through the center of the celestial sphere", "Intersects the elliptical plane", "Aligns with the ecliptic plane"],
+                                                "correctOption": "Passes through the center of the celestial sphere"
+                                            },{
+                                                "question": "What does the second coordinate in the ancient model represent?",
+                                                "options": ["Distance from Earth", "Angular distance from the reference plane", "Elliptical orbit eccentricity", "Celestial longitude"],
+                                                "correctOption": "Angular distance from the reference plane"
+                                                },{
+                                                    "question": "In the ancient model, what is considered when determining the direction of stars?",
+                                                    "options": ["Distance of stars", "Shape of stars", "Angular positions of stars", "Color of stars"],
+                                                    "correctOption": "Angular positions of stars"
+                                                },{
+                                                    "question": "What effects are neglected in the ancient model?",
+                                                    "options": ["Changing observer position and distances of stars", "Elliptical orbits and color of stars", "Gravity and motion of stars", "Rotation of the celestial sphere"],
+                                                    "correctOption": "Changing observer position and distances of stars"
+                                                    },{
+                                                        "question": "Why are the horizontal coordinates time and position dependent?",
+                                                        "options": ["Due to Earth's elliptical orbit", "Due to the changing position of the celestial sphere", "Due to the rotation and orbital motion of the Earth", "Due to the motion of stars"],
+                                                        "correctOption": "Due to the rotation and orbital motion of the Earth"
+                                                    },{
+                                                        "question": "What is the equation used for computing rising and setting times in astronomy?",
+                                                        "options": ["Equation (2.11)", "Equation (2.16)", "Equation (2.20)", "Equation (2.21)"],
+                                                        "correctOption": "Equation (2.20)"
+                                                        },{
+                                                            "question": "When computing rising and setting times, what value is used for the altitude 'a'?",
+                                                            "options": ["50'", "34'", "16'", "0'"],
+                                                            "correctOption": "0'"
+                                                        }, {
+                                                            "question": "What is the purpose of using a small negative value for 'a' in the rising and setting times equation (2.20)?",
+                                                            "options": ["Correct for refraction of light", "Improve accuracy for the Sun", "Compensate for atmospheric pressure", "Adjust for the Moon's parallax"],
+                                                            "correctOption": "Correct for refraction of light"
+                                                            }, {
+                                                                "question": "How is the horizontal refraction value used in the rising and setting times equation?",
+                                                                "options": ["Added to the altitude 'a'", "Subtracted from the altitude 'a'", "Multiplied by the azimuth", "Divided by the declination"],
+                                                                "correctOption": "Subtracted from the altitude 'a'"
+                                                            }, {
+                                                                "question": "What does the rising and setting times of the Sun given in almanacs refer to?",
+                                                                "options": ["Lower edge of the Solar disk", "Midpoint of the Solar disk", "Upper edge of the Solar disk", "Center of the Earth"],
+"correctOption": "Upper edge of the Solar disk"
+}, {
+    "question": "For computing rising and setting times of the Moon, what quantity is used to define the instants?",
+    "options": ["Solar radius", "Apparent radius", "Orbital radius", "Celestial radius"],
+    "correctOption": "Apparent radius"
+}, {
+    "question": "What is the ecliptic?",
+    "options": ["A reference plane for Earth's equatorial plane", "A great circle described by the Moon", "A line connecting the equinoxes", "A plane used for star coordinates"],
+    "correctOption": "A reference plane for Earth's equatorial plane"
+    }, {
+        "question": "What event marks the time when the Sun moves from the southern hemisphere to the northern hemisphere?",
+        "options": ["Summer solstice", "Winter solstice", "Vernal equinox", "Autumnal equinox"],
+                                                                        "correctOption": "Vernal equinox"
+                                                                    }, {
+                                                                        "question": "At the vernal equinox, what are the values of the Sun's right ascension and declination?",
+                                                                        "options": ["Zero", "90 degrees", "180 degrees", "360 degrees"],
+                                                                        "correctOption": "Zero"
+                                                                        }, {
+                                                                            "question": "What is the angular distance from the ecliptic called?",
+                                                                            "options": ["Ecliptic altitude", "Ecliptic latitude", "Equatorial latitude", "Celestial longitude"],
+                                                                            "correctOption": "Ecliptic latitude"
+                                                                        }, {
+                                                                            "question": "What is the coordinate measured counterclockwise from the vernal equinox in the ecliptic frame?",
+                                                                            "options": ["Ecliptic latitude", "Ecliptic longitude", "Equatorial latitude", "Equatorial longitude"],
+                                                                            "correctOption": "Ecliptic longitude"
+                                                                            }, {
+                                                                                "question": "What is the obliquity of the ecliptic?",
+                                                                                "options": ["The distance between equinoxes", "The angle between the equatorial and ecliptic planes", "The time of the vernal equinox", "The angular distance from the ecliptic"],
+                                                                                "correctOption": "The angle between the equatorial and ecliptic planes"
+                                                                            }, {
+                                                                                "question": "What value approximates the obliquity of the ecliptic?",
+                                                                                                            "options": ["23 degrees", "45 degrees", "90 degrees", "180 degrees"],
+                                                                                                            "correctOption": "23 degrees"
+                                                                                                          }, {
+                                                                                                              "question": "What type of coordinates may be encountered depending on the problem, such as heliocentric or geocentric?",
+                                                                                                              "options": ["Ecliptic coordinates", "Equatorial coordinates", "Topocentric coordinates", "Galactic coordinates"],
+                                                                                                              "correctOption": "Heliocentric coordinates"
+                                                                                                            }, {
+                                                                                                                "question": "To transform heliocentric coordinates to geocentric coordinates, what additional information is required?",
+                                                                                                                "options": ["Ecliptic longitude", "Ecliptic latitude", "Distance of the object", "Observer's latitude"],
+                                                                                                                "correctOption": "Distance of the object"
+                                                                                                              }, {
+                                                                                                                  "question": "How is the transformation between heliocentric and geocentric coordinates accomplished?",
+                                                                                                                  "options": ["Using celestial longitude", "Changing the origin", "Evaluating new azimuth", "Ignoring the obliquity"],
+                                                                                                                  "correctOption": "Changing the origin"
+}, {
+    "question": "What is the celestial circle formed by the intersection of the celestial sphere and the equatorial plane?",
+    "options": ["Ecliptic", "Equator", "Meridian", "Zenith"],
+    "correctOption": "Equator"
+  }, {
+      "question": "What is the angle that measures the separation of a star from the equatorial plane?",
+      "options": ["Declination", "Altitude", "Azimuth", "Latitude"],
+      "correctOption": "Declination"
+    }, {
+        "question": "What point is the vernal equinox and where is it located?",
+        "options": ["Polaris", "Betelgeuse", "Sirius", "First point of Aries"],
+        "correctOption": "First point of Aries"
+      }, {
+          "question": "What is the right ascension measured from?",
+          "options": ["Celestial equator", "Ecliptic plane", "Galactic center", "Celestial pole"],
+          "correctOption": "Celestial equator"
+        }, {
+            "question": "Why is the hour angle of an object not a constant?",
+            "options": ["Earth's rotation", "Earth's orbit", "Observer's position", "Celestial motion"],
+            "correctOption": "Earth's rotation"
+          }, {
+              "question": "Why is the hour angle of an object not a constant?",
+              "options": ["Earth's rotation", "Earth's orbit", "Observer's position", "Celestial motion"],
+              "correctOption": "Earth's rotation"
+            }, {
+                "question": "What is the sidereal time at the moment of observation?",
+                "options": ["Declination plus right ascension", "Hour angle plus right ascension", "Hour angle minus right ascension", "Declination minus right ascension"],
+                "correctOption": "Hour angle plus right ascension"
+              }, {
+                  "question": "How is the sidereal time evaluated for any other time?",
+                  "options": ["By subtracting the time elapsed since observation", "By adding the time elapsed since observation", "By using a solar clock", "By measuring the observer's position"],
+                  "correctOption": "By adding the time elapsed since observation"
+                }, {
+                    "question": "What is the relationship between solar time and sidereal time for a sidereal clock?",
+                    "options": ["Equal", "Sidereal time is faster", "Sidereal time is slower", "Varies throughout the day"],
+                    "correctOption": "Sidereal time is faster"
+                  }, {
+                      "question": "Why does a sidereal clock run faster than a solar time clock?",
+                      "options": ["Celestial motion", "Earth's rotation", "Orbital motion of the Earth", "Observer's position"],
+                      "correctOption": "Orbital motion of the Earth"
+                    }, {
+                        "question": "What is the practical advantage of expressing sidereal time in units of time?",
+                        "options": ["Ease of calculation", "Precision in arc minutes", "Observer's convenience", "Celestial accuracy"],
+                        "correctOption": "Ease of calculation"
+                      }, {
+                          "question": "What equation is used for computing rising and setting times of celestial objects?",
+                          "options": ["Equation (2.11)", "Equation (2.20)", "Equation (2.21)", "Equation (2.16)"],
+                          "correctOption": "Equation (2.20)"
+                        }, {
+                            "question": "What correction is needed for higher accuracy in computing rising and setting times?",
+                            "options": ["Parallax correction", "Horizontal refraction", "Declination correction", "Atmospheric distortion"],
+                            "correctOption": "Horizontal refraction"
+                          }, {
+                              "question": "How is the value of 'a' adjusted when computing rising and setting times for the Sun?",
+                              "options": ["a = 0", "a = -34'", "a = -50'", "a = -16'"],
+                              "correctOption": "a = -50'"
+                            }, {
+                                "question": "What factors contribute to the complexity of finding the rising and setting times of the Moon?",
+                                "options": ["Parallax and atmospheric distortion", "Apparent radius and distance variations", "Solar disk and planetary motion", "Rotation of the Earth and sidereal time"],
+                                "correctOption": "Apparent radius and distance variations"
+                              }, {
+                                  "question": "How are estimates for the rising and setting times of celestial objects calculated?",
+                                  "options": ["Using noon coordinates", "Using midnight coordinates", "Using equatorial coordinates", "Using polar coordinates"],
+                                  "correctOption": "Using noon coordinates"
+                                }, {
+                                    "question": "What is the reference plane for the ecliptic coordinate frame?",
+                                    "options": ["Equatorial plane", "Celestial equator", "Ecliptic plane", "Horizon plane"],
+                                    "correctOption": "Ecliptic plane"
+                                  }, {
+                                      "question": "What event marks the Sun's apparent transition from the southern hemisphere to the northern hemisphere?",
+                                      "options": ["Winter solstice", "Vernal equinox", "Summer solstice", "Autumnal equinox"],
+                                      "correctOption": "Vernal equinox"
+                                    }, {
+                                        "question": "What is the coordinate where the Sun's right ascension and declination are both zero?",
+                                        "options": ["Summer solstice", "Autumnal equinox", "Vernal equinox", "Winter solstice"],
+                                        "correctOption": "Vernal equinox"
+                                      }, {
+                                          "question": "What is the angular distance from the ecliptic called?",
+                                          "options": ["Ecliptic distance", "Celestial latitude", "Ecliptic latitude", "Equatorial latitude"],
+                                          "correctOption": "Ecliptic latitude"
+                                        }, {
+                                            "question": "What is the ecliptic longitude measured counterclockwise from?",
+                                            "options": ["Autumnal equinox", "Winter solstice", "Vernal equinox", "Summer solstice"],
+                                            "correctOption": "Vernal equinox"
+                                          }
 
-import Foundation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]

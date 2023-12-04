@@ -23,39 +23,38 @@ class YourNameViewController: UIViewController, UITextFieldDelegate {
         return label
     }()
     
-       let enterNameLabel: UILabel = {
-           let label = UILabel()
-           label.text = "Name"
-           label.textColor = UIColor(named: "Fon1")
-           label.font = UIFont.boldSystemFont(ofSize: 17)
-           label.translatesAutoresizingMaskIntoConstraints = false
-           return label
-       }()
-       
-       let nameTextField: UITextField = {
-           let textField = UITextField()
-           textField.borderStyle = .roundedRect
-           textField.layer.cornerRadius = 12
-           textField.attributedPlaceholder = NSAttributedString(
+    let enterNameLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Name"
+        label.textColor = UIColor(named: "Fon1")
+        label.font = UIFont.boldSystemFont(ofSize: 17)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    let nameTextField: UITextField = {
+        let textField = UITextField()
+        textField.borderStyle = .roundedRect
+        textField.layer.cornerRadius = 12
+        textField.attributedPlaceholder = NSAttributedString(
             string: "Enter your name",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
-           textField.textColor = .white
-           textField.backgroundColor = UIColor(named: "textField")
-           textField.translatesAutoresizingMaskIntoConstraints = false
-           return textField
-       }()
-       
-       let saveButton: UIButton = {
-           let button = UIButton(type: .system)
-           button.setTitle("Ok", for: .normal)
-           button.backgroundColor = .systemGray
-//           button.configuration?.titleAlignment = .center
-           button.layer.cornerRadius = 10
-           button.tintColor = .white
-           button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
-           button.translatesAutoresizingMaskIntoConstraints = false
-           return button
-       }()
+        textField.textColor = .white
+        textField.backgroundColor = UIColor(named: "textField")
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        return textField
+    }()
+    
+    let saveButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Ok", for: .normal)
+        button.backgroundColor = .systemGray
+        button.layer.cornerRadius = 10
+        button.tintColor = .white
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,57 +63,57 @@ class YourNameViewController: UIViewController, UITextFieldDelegate {
         nameTextField.delegate = self
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-                view.addGestureRecognizer(tapGesture)
+        view.addGestureRecognizer(tapGesture)
+    }
 
-        func setupUI() {
-                view.backgroundColor = UIColor(named: "Fon")
-                view.addSubview(enterLastLabel)
-                view.addSubview(enterNameLabel)
-                view.addSubview(nameTextField)
-                view.addSubview(saveButton)
-                
-                NSLayoutConstraint.activate([
-                    
-                    enterLastLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-                    enterLastLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 250),
-                    enterLastLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-                    enterLastLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+    func setupUI() {
+        view.backgroundColor = UIColor(named: "Fon")
+        view.addSubview(enterLastLabel)
+        view.addSubview(enterNameLabel)
+        view.addSubview(nameTextField)
+        view.addSubview(saveButton)
 
-                    enterNameLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-                    enterNameLabel.topAnchor.constraint(equalTo: enterLastLabel.bottomAnchor, constant: 70),
-                    
-                    nameTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-                    nameTextField.topAnchor.constraint(equalTo: enterNameLabel.bottomAnchor, constant: 20),
-                    nameTextField.widthAnchor.constraint(equalToConstant: 300),
-                    
-                    saveButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-                    saveButton.topAnchor.constraint(equalTo: nameTextField.bottomAnchor, constant: 50),
-                    saveButton.heightAnchor.constraint(equalToConstant: 35),
-                    saveButton.widthAnchor.constraint(equalToConstant: 140)
-                    
-                ])
-            }
-            
-        }
-    
+        NSLayoutConstraint.activate([
+            enterLastLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            enterLastLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: view.bounds.height * 0.2),
+            enterLastLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: view.bounds.width * 0.05),
+            enterLastLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -view.bounds.width * 0.05),
+
+            enterNameLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            enterNameLabel.topAnchor.constraint(equalTo: enterLastLabel.bottomAnchor, constant: view.bounds.height * 0.07),
+
+            nameTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            nameTextField.topAnchor.constraint(equalTo: enterNameLabel.bottomAnchor, constant: view.bounds.height * 0.02),
+            nameTextField.widthAnchor.constraint(equalToConstant: view.bounds.width * 0.8),
+
+            saveButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            saveButton.topAnchor.constraint(equalTo: nameTextField.bottomAnchor, constant: view.bounds.height * 0.05),
+            saveButton.heightAnchor.constraint(equalToConstant: view.bounds.height * 0.05),
+            saveButton.widthAnchor.constraint(equalToConstant: view.bounds.width * 0.35)
+        ])
+    }
+
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-           textField.resignFirstResponder() // dismiss the keyboard
-           return true
-       }
-    
-    @objc func dismissKeyboard() {
-           view.endEditing(true)
-       }
+        textField.resignFirstResponder()
+        return true
+    }
 
-    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+
     @objc func saveButtonTapped() {
         if nameTextField.hasText {
-            print("Data saved")
-            storage.set(nameTextField.text, forKey: .textFiltdText)
-            
+            let enteredName = nameTextField.text!
+
+            Core.shared.saveUserName(enteredName)
+            print("Data saved: \(enteredName)")
+
+            storage.set(enteredName, forKey: .textFiltdText)
+
             let tabController = TabViewController()
             tabController.modalPresentationStyle = .fullScreen
-            
+
             if let navigationController = navigationController {
                 navigationController.setViewControllers([tabController], animated: true)
             } else {
@@ -123,21 +122,15 @@ class YourNameViewController: UIViewController, UITextFieldDelegate {
         }
     }
 
-
-
-    
     override func viewDidLayoutSubviews() {
-        //Show onboarding
         if Core.shared.isNewUser() {
             let vc = WelcomeViewController()
             vc.modalPresentationStyle = .fullScreen
             present(vc, animated: false)
         }
     }
-    
-    
-
 }
+
 
 
 class WelcomeViewController: UIViewController {
@@ -177,7 +170,7 @@ class WelcomeViewController: UIViewController {
             scrollView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             scrollView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
             
-            buttonB.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            buttonB.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -5),
             buttonB.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
             buttonB.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
             buttonB.heightAnchor.constraint(equalToConstant: 55)
@@ -201,7 +194,7 @@ class WelcomeViewController: UIViewController {
 
             // title, image
             let label = UILabel(frame: CGRect(x: 10, y: 40, width: pageView.frame.size.width - 20, height: 120))
-            let secondlabel = UILabel(frame: CGRect(x: 10, y: 560, width: pageView.frame.size.width - 20, height: 230))
+            let secondlabel = UILabel(frame: CGRect(x: 10, y: 530, width: pageView.frame.size.width - 20, height: 230))
             let imageView = UIImageView(frame: CGRect(x: 10, y: 200, width: pageView.frame.size.width - 20, height: 380))
 
             
@@ -229,24 +222,30 @@ class WelcomeViewController: UIViewController {
 
     
     @objc func didTapButton(_ button: UIButton) {
-            if page < 2 {
-                page += 1
-                let xOffset = CGFloat(page) * scrollView.frame.size.width
-                scrollView.setContentOffset(CGPoint(x: xOffset, y: 0), animated: true)
+        if page < 2 {
+            page += 1
+            let xOffset = CGFloat(page) * scrollView.frame.size.width
+            scrollView.setContentOffset(CGPoint(x: xOffset, y: 0), animated: true)
 
-                if page == 2 {
-                    buttonB.setTitle("Get started", for: .normal)
-                }
-            } else {
-                UIView.animate(withDuration: 0.5, animations: {
-                    self.view.transform = CGAffineTransform(translationX: 0, y: -self.view.frame.height)
-                    self.view.alpha = 0
-                }) { (_) in
-                    Core.shared.setIsNotNewUser()
-                    self.dismiss(animated: false, completion: nil)
-                }
+            if page == 2 {
+                buttonB.setTitle("Get started", for: .normal)
+            }
+        } else {
+            // Save the username before marking the user as not a new user
+            if let userName = Core.shared.getUserName() {
+                Core.shared.saveUserName(userName)
+            }
+
+            UIView.animate(withDuration: 0.5, animations: {
+                self.view.transform = CGAffineTransform(translationX: 0, y: -self.view.frame.height)
+                self.view.alpha = 0
+            }) { (_) in
+                Core.shared.setIsNotNewUser()
+                self.dismiss(animated: false, completion: nil)
             }
         }
+    }
+
 
 
 

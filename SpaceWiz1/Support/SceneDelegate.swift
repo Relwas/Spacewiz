@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -17,12 +18,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
          guard let windowScene = (scene as? UIWindowScene) else { return }
          window = UIWindow(windowScene: windowScene)
          
-         // Check if a name is saved
          if let savedName = storage.string(forKey: .textFiltdText), !savedName.isEmpty {
-             // If a name is saved, set MainViewController as the root view controller
-             showMainVC()
+             showTabVC()
          } else {
-             // If no name is saved or the saved name is empty, set YourNameViewController as the root view controller
              showYourNameVC()
          }
      }
@@ -40,6 +38,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func showMainVC(){
         window?.rootViewController = MainViewController()
+        window?.makeKeyAndVisible()
+    }
+    
+    func showTabVC(){
+        window?.rootViewController = TabViewController()
         window?.makeKeyAndVisible()
     }
     

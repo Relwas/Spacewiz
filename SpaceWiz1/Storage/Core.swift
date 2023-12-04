@@ -23,6 +23,12 @@ class Core {
         print("User name saved:", name)
         print("IsNewUser flag set to false")
     }
+    
+    func getUserName() -> String? {
+        let userName = UserDefaults.standard.string(forKey: "UserName")
+        print("Retrieved user name:", userName ?? "nil")
+        return userName
+    }
 
     
 //    func ifUserName
